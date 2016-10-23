@@ -54,7 +54,8 @@ id_caliber int not null references Caliber,
 name varchar(100) unique not null,
 description varchar(1000),
 id_manufacture int references Manufacture,
-id_shell_type int not null);
+id_shell_type int not null references Shell_type,
+price int);
 commit;
 
 create table Accessory(
