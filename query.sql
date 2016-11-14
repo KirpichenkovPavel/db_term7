@@ -148,11 +148,7 @@ and id not in
 	from shell join caliber on caliber.id=shell.id_caliber)
 and id not in
 	(select caliber.id as id
-	from weapon join caliber on caliber.id = weapon.id_caliber);
-
-select first 5 caliber.diameter, caliber.length
-from caliber
-join weapon on 
+	from weapon join caliber on caliber.id = weapon.id_caliber); 
 
 # calibers of the most owner-changable weapons
 select first 5 caliber.diameter, caliber.length, avg(avg_wpn_period) as average_caliber_period
