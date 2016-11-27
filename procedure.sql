@@ -48,14 +48,4 @@ begin
 	else
 		CopiedShells = -1;
 end^
-set term ;^
-
-
-
-
-
-
-
-
-
-
+set term ;
